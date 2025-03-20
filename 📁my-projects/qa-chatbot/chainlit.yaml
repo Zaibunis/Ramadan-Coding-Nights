@@ -1,0 +1,17 @@
+chainlit: 2.0.0
+
+ui:
+   name : Faria's Chatbot
+   description : A simple, conversational chatbot designed to assist users with various tasks.
+
+default_expand_messages: true
+
+auth:
+    required: true
+    providers:
+       -  github
+
+oauth_providers:
+ github:
+    client_id: {$OAUTH_GITHUB_CLIENT_ID}
+    client_secret: {$OAUTH_GITHUB_CLIENT_SECRET}
